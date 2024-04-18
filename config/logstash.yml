@@ -1,1 +1,2 @@
-
+cloud.auth: ${CLOUD_AUTH}
+cloud.id: ${CLOUD_ID}
