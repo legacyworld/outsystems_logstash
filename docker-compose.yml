@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  logstash:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: logstash
+    env_file:
+      - outsystems_env
+    volumes:
+      - ./config:/usr/share/logstash/config
+      - ./pipeline:/usr/share/logstash/pipeline
+      - ./data:/home/data
